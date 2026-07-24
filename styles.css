@@ -316,6 +316,173 @@ img {
     animation: float 3s ease-in-out infinite;
 }
 
+/* Hero visuel 100% CSS (fiche avis Google) */
+.review-showcase {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    animation: float 4s ease-in-out infinite;
+}
+
+.review-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(96, 32, 160, 0.08);
+    padding: 28px 26px;
+}
+
+.rc-badge {
+    position: absolute;
+    top: -16px;
+    right: 0;
+    z-index: 2;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 9px 18px;
+    border-radius: 50px;
+    box-shadow: 0 12px 26px -8px rgba(96, 32, 160, 0.5);
+}
+
+.rc-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.rc-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rc-logo {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 800;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc-name {
+    font-weight: 700;
+    color: var(--dark);
+    font-size: 15px;
+}
+
+.rc-sub {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.rc-score {
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.rc-score-num {
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--dark);
+    line-height: 1;
+}
+
+.rc-stars {
+    color: var(--secondary);
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.rc-stars.sm {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.rc-count {
+    display: block;
+    font-size: 11px;
+    color: var(--gray);
+    margin-top: 2px;
+}
+
+.rc-bars {
+    margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.rc-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rc-bar > span {
+    font-size: 11px;
+    color: var(--gray);
+    width: 8px;
+    text-align: center;
+}
+
+.rc-bar .track {
+    flex: 1;
+    height: 7px;
+    border-radius: 5px;
+    background: var(--gray-light);
+    overflow: hidden;
+}
+
+.rc-bar .track > i {
+    display: block;
+    height: 100%;
+    width: var(--w);
+    background: var(--gradient);
+    border-radius: 5px;
+}
+
+.rc-review {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: var(--light);
+    border-radius: var(--radius);
+    padding: 14px;
+}
+
+.rc-avatar {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--gradient);
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rc-review-body p {
+    font-size: 13px;
+    color: var(--dark);
+    line-height: 1.5;
+    margin-top: 4px;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -1083,7 +1250,7 @@ img {
     }
 
     .hero {
-        padding: 180px 0 40px;
+        padding: 200px 0 40px;
     }
 
     .hero-content h1 {
